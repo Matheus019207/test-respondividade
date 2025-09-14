@@ -172,8 +172,8 @@ nav a:hover::before{
   position: fixed;
   width: 40px;
   z-index: 100;
-  left: 1150px;
-  top: 580px;
+  left: 95%;
+  top: 93%;
   transition: .2s;
 }
 
@@ -700,6 +700,7 @@ details p {
 
 .back1 {
   background: #f4f4f9;
+  color: black;
   transform: rotateY(180deg);
   display: flex;
   align-items: center;
@@ -721,6 +722,12 @@ details p {
 .card2:hover {
   transform: translateY(-5px);
   transition: .8s;
+}
+
+.testex{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1rem;
 }
 
 #cinza{
