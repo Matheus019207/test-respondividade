@@ -1064,7 +1064,7 @@ button{
       margin: auto;
 }
 
-@media (max-width: 780px) {
+/* @media (max-width: 780px) {
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -1144,9 +1144,98 @@ button{
     border-collapse: collapse;
     min-width: 400px;
   }
+} */
+
+@media (max-width: 780px) {
+  /* Estilos para a navegação */
+  .nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 100%;
+    width: 100vw;
+    background: #2e7d32;
+    transition: right 0.3s ease-in-out;
+    padding: 15px 0;
+    z-index: 10;
+  }
+
+  .nav ul li {
+    text-align: right;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .nav ul li a {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  .nav .icon {
+    display: block;
+    color: var(--branco);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 20;
+    text-decoration: none;
+  }
+
+  .nav .logo {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+  }
+
+  .nav.responsive ul {
+    right: 0;
+  }
+
+  /* Estilos para cards e card1 */
+  .cards,
+  .cards1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .cards {
+    align-items: center;
+    margin: 20px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para a tabela */
+  .tabela {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 400px;
+  }
 }
 
-@media (max-width: 420px) {
+
+
+
+
+
+/* @media (max-width: 420px) {
   .cards {
     gap: 12px;
     width: 95%; 
@@ -1241,7 +1330,96 @@ table {
   border-collapse: collapse;
   min-width: 400px; 
 }
+} */
+
+@media (max-width: 420px) {
+  /* Estilos para a navegação */
+  .nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 100%;
+    left: auto;
+    width: 100vw;
+    background: #2e7d32;
+    transition: right 0.3s;
+    padding: 15px 0;
+    z-index: 10;
+  }
+
+  .nav.responsive ul {
+    right: 0;
+    text-align: center;
+  }
+
+  .nav .icon {
+    display: block;
+    color: var(--branco);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 20;
+    text-decoration: none;
+  }
+
+  .nav ul li {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .nav ul li a {
+    width: 90%;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  .nav .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    display: block;
+  }
+
+  /* Estilos para os cards e cards1 */
+  .cards,
+  .cards1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .cards {
+    gap: 12px;
+    width: 95%;
+    font-size: 0.9rem;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .card {
+    width: 70%;
+    max-width: 350px;
+  }
+
+  /* Estilos para a tabela */
+  .tabela {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    min-width: 400px;
+  }
 }
+
+
+
 
   @media(width:320px){
    .cards {
@@ -1345,118 +1523,6 @@ table {
   justify-content: center;
   align-items: center;
 }
-
-/* @media (max-width: 375px) {
-   .cards {
-    width: 100%;
-    padding: 0;
-    gap: 20px;
-  }
-  .btn img{
-    width: 22px;
-  }
-  #carrosel img{
-    display: none;
-  }
-  
-  .home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-  }
-
-  #carrosel-home{
-    font-size: 2.1rem;
-    width: 80%;   
-    left: 120px;
-    top: 180px;
-    
-  }
-  #carrosel p{
-    font-size: 1rem;
-    top: 250px;
-    left: 130px;
-    width: max-content;
-  }
-  .card {
-    width: 70%; 
-    max-width: 98%;
-    min-width: 0;
-    margin: 0 auto;
-    margin-right: 60px; 
-    padding: 10px; 
-    font-size: 0.9rem; 
-    box-sizing: border-box;
-  }
-  .card h3, .card p {
-    font-size: 0.9rem; 
-    text-align: center;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 10px;
-    right: 100%; 
-    left: auto;
-    width: 100vw; 
-    background: #2e7d32;
-    transition: right 0.3s;
-    padding: 15px 0;
-    z-index: 10;
-}
-
-.nav.responsive ul {
-  right: 0; 
-}
-
-.nav .icon {
-  display: block;
-  color: var(--branco);
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  z-index: 20;
-}
-
-
-.nav ul li {
-  text-align: right;
-  padding-right: 20px;
-}
-
-  .nav .logo {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  display: block;
-}
-
-  .nav ul li a {
-    width: 90%;
-    margin: 5px auto;
-    text-align: center;
-  }
-
-  .icon{
-    text-decoration: none;
-  }
-
-  .cards1{
-  display: flex;
-  flex-direction: column; 
-  gap: 16px; 
-  padding: 16px;
-  }
-
-  } 
-.acessibilidade{
-  justify-content: center;
-  align-items: center;
-} */
 
 
 @media (max-width: 375px) {
