@@ -162,7 +162,6 @@ function atualizarInterface(logado, nome = null, email = null, pontos = null) {
             }
         }
     } else {
-        // Essa parte é fundamental: se não estiver logado, mostra o formulário e esconde o painel
         if (formsContainer) formsContainer.style.display = 'block';
         if (bemVindo) bemVindo.style.display = 'none';
     }

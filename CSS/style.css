@@ -334,7 +334,6 @@ body {
   text-align: center;
 }
 
-
 .content {
   padding: 60px 20px;
   background: var(--background);
@@ -496,7 +495,6 @@ img{
   margin-top: -80px;
 }
 
-
 #map{
   height: 500px;
   width: 100%;
@@ -525,7 +523,6 @@ table{
   padding: 20px;
 }
 
-
 .faq{
   margin: 40px auto;
   max-width: 700px;
@@ -537,7 +534,6 @@ table{
   font-size: 2rem;
   margin-bottom: 25px;
 }
-
 
     details{
       border:1px solid white;
@@ -1039,9 +1035,6 @@ th{
   padding: 15px;
 }
 
-
-
-
 #logout-button {
   background-color: var(--verdeEscuroNav);
   color: #fff;
@@ -1202,7 +1195,6 @@ button{
 }
 
 @media (max-width: 425px) {
-  /* Estilos para a navegação */
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -1266,7 +1258,6 @@ button{
     max-width: 350px;
   }
 
-  /* Estilos para a tabela */
   .tabela {
     width: 100%;
     overflow-x: auto;
@@ -1305,7 +1296,6 @@ button{
 }
 
 @media (max-width: 375px) {
-  /* Estilos para a navegação */
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -1364,7 +1354,6 @@ button{
     max-width: 350px;
   }
 
-  /* Estilos para a tabela */
   .tabela {
     width: 100%;
     overflow-x: auto;
@@ -1474,7 +1463,6 @@ button{
     max-width: 350px;
   }
 
-  /* Estilos para a tabela */
   .tabela {
     width: 100%;
     overflow-x: auto;
